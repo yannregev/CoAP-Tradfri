@@ -46,6 +46,7 @@ int main(int argc, char** argv)
 {
 	void Userinput_Init(void); Userinput_Init();
     void FileHandler_Init(void); FileHandler_Init();
+    void Tradfri_Init(void); Tradfri_Init();
 	Setup_Timer();
 
 	while(1) {

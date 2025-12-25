@@ -18,7 +18,7 @@ typedef struct {
 }CoapCtx_t;
 
 
-int CoapInit(void);
+void Coap_Init(void);
 int CoapConnect(void);
 int CoapDisconnect(void);
 int CoapSetPskKey(char *key, int len);
@@ -26,7 +26,7 @@ int CoapSetPskIdentity(char *identity, int len);
 int CoapGetRequest(char *endpoint, int endpoint_len, char *response);
 int CoapPutRequest(char *endpoint, int endpoint_len, char*payload, int payload_len, char *response);
 int CoapPostRequest(char *endpoint, int endpoint_len, char*payload, int payload_len, char *response);
-int CoapSetServerAddr(char *addr, int len);
+int CoapSetServerAddr(const char *addr, const int len);
 
 void CoapFree(void);
 
