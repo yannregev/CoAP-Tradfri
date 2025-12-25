@@ -8,10 +8,8 @@ typedef struct {
 
 void FileHandlerInit(void);
 
-int GetCredentials(Credentials_t *cred);
 
 int GetIpAddress(char *buffer, int size);
 
-int StoreCredentials(Credentials_t cred);
 
 #endif //FILE_HANDER_H_
